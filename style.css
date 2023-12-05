@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gainsboro;
+}
+#Display{
+    font-size: 48px;
+    font-weight: 600;
+    font-family: cursive;
+    text-align: center;
+}
+#s-btn{
+    width: 125px;
+    height: auto;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid gainsboro;
+    border-radius: 2px 40px 2px 40px;
+    background-color: whitesmoke;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.178), inset 15px 15px 24px rgba(114, 114, 114, 0.126);
+    cursor: pointer;
+}
+#s-btn:active, #s-btn:hover{
+    border: 1px solid whitesmoke;
+    border-style: inset ;
+    width: 155px;
+    border-radius: .9rem;
+    box-shadow: inset 15px 15px 30px rgba(0, 0, 0, 0.25), inset 15px 15px 30px rgba(245, 245, 245, 0.156);
+}
+#g-btn{
+    border: 1px solid gainsboro;
+    background-color: white;
+    width: 175px;
+    padding: 12px;
+    border-radius: 45px;
+    box-shadow:inset 10px 10px 30px rgba(0, 0, 0, 0.145),inset 8px 8px 30px rgba(255, 255, 255, 0.317);
+    cursor: pointer;
+    visibility: hidden;
+}
+#g-btn:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25),inset 15px 15px 30px rgba(245, 245, 245, 0.208);
+    font-size: 14px;
+    font-weight: 700;
+}
+#g-btn:active{
+    background-color: rgba(255, 255, 255, 0.254);
+    /* transition: 2s ease linear; */
+}
+#Guess{
+    width: 45vw;
+    height: 35px;
+    font-size: 24px;
+    padding: 5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.303);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.103), inset -15px -15px 30px rgba(255, 255, 255, 0.218);
+    text-align: center;
+    display: none;
+}
+#Guess:hover,#Guess:active{
+    border-radius: 2.8rem;
+}
+#Guess::-moz-placeholder{
+    opacity: .4;
+    color: goldenrod;
+}
+.reset-box{
+    width: 55vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#r-btn{
+    width: 65px;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    padding: 8px;
+    border-radius: 2.9rem;
+    margin-left: 875px;
+    cursor: pointer;
+    box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.184),inset 12px 12px 25px rgba(245, 245, 245, 0.236);
+    visibility: hidden;
+}
+#r-btn:active,#r-btn:hover{
+    border: 1px solid rgb(0, 0, 0);
+    border-style: groove ;
+    width: 75px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 2.5rem;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.166), inset 15px 15px 30px rgba(245, 245, 245, 0.421);
+}
+@media (max-width:425px) {
+    #Guess{
+        font-size: 13px;
+    }
+}

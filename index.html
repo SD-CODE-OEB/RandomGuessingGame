@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Numbers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="Display">Welcome To The Game!!</h1>
+
+    <input
+      type="text"
+      name="Guess"
+      id="Guess"
+      placeholder="Enter Number here"
+    />
+
+    <button type="button" id="s-btn"
+    onclick="startGame()">Start Game</button>
+
+    <button type="button" id="g-btn"
+    onclick="gamePlay()"
+    value="Guess">Guess Number</button>
+    <div class="reset-box">
+      <button type="button"
+      id="r-btn"
+      onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
