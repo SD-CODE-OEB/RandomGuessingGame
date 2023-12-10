@@ -34,11 +34,11 @@ body{
     cursor: pointer;
 }
 #s-btn:active, #s-btn:hover{
-    border: 1px solid whitesmoke;
-    border-style: inset ;
+    border: 1px solid black;
+    /* border-style: ; */
     width: 155px;
-    border-radius: .9rem;
-    box-shadow: inset 15px 15px 30px rgba(0, 0, 0, 0.25), inset 15px 15px 30px rgba(245, 245, 245, 0.156);
+    border-radius: 50%;
+    box-shadow:  12px 15px 25px rgba(0, 0, 0, 0.308), inset 15px 15px 30px rgba(245, 245, 245, 0.156);
 }
 #g-btn{
     border: 1px solid gainsboro;

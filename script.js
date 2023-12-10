@@ -25,13 +25,16 @@ let maxVal=100;
 const random= Math.round(Math.random()*(maxVal-minVal+1) +minVal);
 console.log(random);
 
-
+let attempts=0;
+    
 function gamePlay(){
     const input= Number(guess.value);
     display.style.fontSize='1.5rem';
+    attempts++;
+    console.log(attempts);
     while(true){
         if(input===random){
-            display.innerHTML= `You Guessed it Right, It was  ${random} <br>&#128079; &#128079; &#128079; `;
+            display.innerHTML= `You Guessed it Right in ${attempts} attempts, It was  ${random} <br>&#128079; &#128079; &#128079; `;
             break;
         } else if(input>random){
             display.innerHTML=`Too High, Guess less than ${input}`;
